@@ -244,5 +244,3 @@ function functionWithArgs(hola, rey){
     console.log(hola + rey);
     }
     functionWithArgs(1, 2);   
-
-//asdasdassadasadddddd
