@@ -1,0 +1,37 @@
+scoope:scoope hace referencia al alcance o al área donde una variable puede utilizarse.por ej si se declara dentro de una variable let:
+let nombre = "emilio" // el scoope es global 
+y si se declara dentro de una funcion 
+const saludar =()=>{
+let apellido = "aguirre"
+console.log(`nombre: ${nombre} y apellido ${apellido}`)
+}
+saludar()
+console.log(apellido)
+//en este caso el scoope es de tipo block
+
+hoisting: Hoisting te permite usar funciones y variables antes de que se hayan declarado.
+
+callback:la funcion callback es un patron que se pasa como parametro a otra funcion invocada (asincrona) para que sea "llamada de nuevo" en un momento posterior.
+
+ej de callback:
+// function
+function persona(nombre, callback) {
+    console.log('Hola' + ' ' + nombre);
+    callback();
+}
+
+// callback function
+function callMe() {
+    console.log('funcion callback');
+}
+
+// passing function as an argument
+persona('Emilio', callMe);
+
+diferencia entre una funcino literal y una funcion arrow :Las Arrow function son de tipo anonimas carecen de nombre.
+ tambien hay diferencia en el contexto  En las funciones normales el contexto se define al llamarlas y en las funciones arrow se define al declararlas
+ en las arrow function this toma el valor del contexto en el que este la funcion... y en la funcion normal this toma el contexto de la funcion normal en si        
+
+que es this en js?:this se utiliza en js para llamar a un objeto dentro de una funcion.
+
+que es clousure: un closure es una función "cualquiera" que accede a una variable fuera de su contexto.
